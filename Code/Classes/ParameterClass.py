@@ -11,7 +11,7 @@ import Code.globals as glb
 class ParameterClass:
     def __init__(self):
         self.exp = {'name': 'BinocularRivarly',
-                    'numBlocks': 2
+                    'numBlocks': 3
                     }
         self.screen = {'number': 1,
                        'framerate': 60,
@@ -26,7 +26,7 @@ class ParameterClass:
                      'color':   {'default': (255, 255, 255)},
                      'bgColor': {'default': None}
                      }
-        self.block = {'numTrials': 2}
+        self.block = {'numTrials': 3}
         self.trial = {'pdDurS': 0.2,
                       'promptDurS':0.75,
                       'imagineDurS':6,
