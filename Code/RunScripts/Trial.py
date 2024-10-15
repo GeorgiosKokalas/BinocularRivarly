@@ -13,19 +13,19 @@ VIV_LINE_END = (glb.PARAMETERS.screen['pixDims'][0]/4, 0)
 
 VIV_NOTCH_POS = [(-glb.PARAMETERS.screen['pixDims'][0]/4, 0),
                  (-glb.PARAMETERS.screen['pixDims'][0]/8, 0),
-                 (0,0),
+                 #(0,0),
                  (glb.PARAMETERS.screen['pixDims'][0]/8, 0),
                  (glb.PARAMETERS.screen['pixDims'][0]/4, 0)
                  ]
 
 VIV_TEXT_POS = [(-glb.PARAMETERS.screen['pixDims'][0]/4, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
                 (-glb.PARAMETERS.screen['pixDims'][0]/8, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
-                (0, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
+                #(0, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
                 (glb.PARAMETERS.screen['pixDims'][0]/8, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
                 (glb.PARAMETERS.screen['pixDims'][0]/4, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10)
                 ]
 
-VIV_TEXT_CONT = ['Not at all', 'Very dimly', 'Somewhat', 'Mostly', 'Crystal Clear']
+VIV_TEXT_CONT = ['Not at all', 'Very dimly', 'Mostly', 'Crystal Clear'] #'Somewhat', 'Mostly', 'Crystal Clear']
 
 COL_LINE_START = (-glb.PARAMETERS.screen['pixDims'][0]/8, 0)
 COL_LINE_END = (glb.PARAMETERS.screen['pixDims'][0]/8, 0)
@@ -40,7 +40,7 @@ COL_TEXT_POS = [(-glb.PARAMETERS.screen['pixDims'][0]/8, -SEL_RADIUS-glb.PARAMET
                 (glb.PARAMETERS.screen['pixDims'][0]/8, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10)
                 ]
 
-COL_TEXT_CONT = ['Red', 'Mixed', 'Cyan']
+COL_TEXT_CONT = ['Red', 'Mixed', 'Blue']
 
 
 def run(prompt:str, condition:str, trialIdx:int, blockIdx:int):
