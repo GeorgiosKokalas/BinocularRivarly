@@ -15,7 +15,7 @@ def makeTaskVars() -> dict:
     import Code.globals as glb
     import math
 
-    prompts = ['R', 'C']
+    prompts = ['R', 'B']
     conditions = ['Dark', 'Light']
     
     prompts *= math.ceil(glb.PARAMETERS.block['numTrials']/2)
