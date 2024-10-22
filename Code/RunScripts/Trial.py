@@ -12,16 +12,16 @@ VIV_LINE_START = (-glb.PARAMETERS.screen['pixDims'][0]/4, 0)
 VIV_LINE_END = (glb.PARAMETERS.screen['pixDims'][0]/4, 0)
 
 VIV_NOTCH_POS = [(-glb.PARAMETERS.screen['pixDims'][0]/4, 0),
-                 (-glb.PARAMETERS.screen['pixDims'][0]/8, 0),
+                 (-glb.PARAMETERS.screen['pixDims'][0]/12, 0),
                  #(0,0),
-                 (glb.PARAMETERS.screen['pixDims'][0]/8, 0),
+                 (glb.PARAMETERS.screen['pixDims'][0]/12, 0),
                  (glb.PARAMETERS.screen['pixDims'][0]/4, 0)
                  ]
 
 VIV_TEXT_POS = [(-glb.PARAMETERS.screen['pixDims'][0]/4, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
-                (-glb.PARAMETERS.screen['pixDims'][0]/8, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
+                (-glb.PARAMETERS.screen['pixDims'][0]/12, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
                 #(0, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
-                (glb.PARAMETERS.screen['pixDims'][0]/8, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
+                (glb.PARAMETERS.screen['pixDims'][0]/12, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10),
                 (glb.PARAMETERS.screen['pixDims'][0]/4, -SEL_RADIUS-glb.PARAMETERS.text['size']['options']/2-10)
                 ]
 

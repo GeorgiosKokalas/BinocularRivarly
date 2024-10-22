@@ -26,7 +26,7 @@ class ParameterClass:
                      'color':   {'default': (255, 255, 255)},
                      'bgColor': {'default': None}
                      }
-        self.block = {'numTrials': 3}
+        self.block = {'numTrials': 40}
         self.trial = {'pdDurS': 0.2,
                       'promptDurS':0.75,
                       'imagineDurS':6,
