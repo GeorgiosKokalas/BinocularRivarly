@@ -1,6 +1,10 @@
 import Code.globals as glb
 from psychopy import visual
 
+
+# FILE CONTAINING FUNCTIONS WRAPPING IN THE DRAWING OF SHAPES
+
+# Wrapper for drawign text
 def draw_text(text:str, BgColor=glb.PARAMETERS.text['bgColor']['default'], Pos=(0,0),
               Color=glb.PARAMETERS.text['color']['default'], HozLength=None,
               Size=glb.PARAMETERS.text['size']['default'],
