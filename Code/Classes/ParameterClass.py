@@ -50,11 +50,11 @@ class ParameterClass:
                      'color':   {'default': (255, 255, 255)},
                      'bgColor': {'default': None}
                      }
-        
+
         # block - Information about each block
         #   - numTrials: The number of trials per block
-        self.block = {'numTrials': 3}
-
+        self.block = {'numTrials': 40}
+        
         # trial - Inforation about each trial
         #   - pdDurS: The duration (in seconds) of the photodiode
         #   - promptDurS: The duration of the R/B prompt
