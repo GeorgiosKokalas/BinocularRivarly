@@ -7,7 +7,7 @@
 
 # IMPORT LIBRARIES AND CODE
 # Gain access to the OS and add the code to the Python Path
-import os, sys
+import os, sys, random
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 sys.path.append("./Code/")
 
@@ -15,12 +15,13 @@ def makeTaskVars() -> dict:
     import Code.globals as glb
     import math
 
-    prompts = ['R', 'C']
+    prompts = ['R', 'B']
     conditions = ['Dark', 'Light']
     
     prompts *= math.ceil(glb.PARAMETERS.block['numTrials']/2)
+    random.shuffle(prompts)
     if len(prompts) > glb.PARAMETERS.block['numTrials']:
-        prompts = prompts[0:glb.PARAMETERS.block['numTrials']-1]
+        prompts = prompts[0:glb.PARAMETERS.block['numTrials']]
 
     taskVars = {'prompts': prompts,
                 'conditions': conditions}

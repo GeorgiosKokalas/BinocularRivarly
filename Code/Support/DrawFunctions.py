@@ -1,6 +1,10 @@
 import Code.globals as glb
 from psychopy import visual
 
+
+# FILE CONTAINING FUNCTIONS WRAPPING IN THE DRAWING OF SHAPES
+
+# Wrapper for drawign text
 def draw_text(text:str, BgColor=glb.PARAMETERS.text['bgColor']['default'], Pos=(0,0),
               Color=glb.PARAMETERS.text['color']['default'], HozLength=None,
               Size=glb.PARAMETERS.text['size']['default'],
@@ -37,6 +41,7 @@ def draw_cycle(FillColor=(255,255,255), Radius=50,Pos=(0,0), Opacity=1):
 
     glb.UI_CYCLE.draw()
 
+
 def draw_line(Start=(-0.5, -0.5), End=(0.5, 0.5), Size=1, Opacity=1, Color=(255,255,255)):
     glb.UI_LINE.setStart(Start)
     glb.UI_LINE.setEnd(End)
@@ -45,4 +50,13 @@ def draw_line(Start=(-0.5, -0.5), End=(0.5, 0.5), Size=1, Opacity=1, Color=(255,
     glb.UI_LINE.setColor(Color)
 
     glb.UI_LINE.draw()
+
+
+def draw_image(FileName, Opacity=1.0, Size=None, Pos=(0,0)):
+    glb.UI_IMG.setImage(FileName)
+    glb.UI_IMG.setOpacity(Opacity)
+    glb.UI_IMG.setPos(Pos)
+    if Size != None: glb.UI_IMG.setSize(Size)
+
+    glb.UI_IMG.draw()
     

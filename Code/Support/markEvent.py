@@ -5,6 +5,7 @@ def markEvent(EventType:str, *args):
     eventName = ''
     eventTime = glb.ABS_CLOCK.getTime()
     match EventType:
+        # Task generic events (NECESSARY)
         case "taskStart":
             eventName = "Task Started"
         case "taskStop":
@@ -12,11 +13,13 @@ def markEvent(EventType:str, *args):
         case "taskAbort":
             eventName = "Task Aborted"
 
+        # Intro Events
         case "introStart":
             eventName = f'Intro Started'
         case "introEnd":
             eventName = f'Intro Ended'
-            
+
+        # Block and Trial generic events
         case "blockStart":
             eventName = f'Block {args[0]} Started'
         case "blockEnd":
@@ -30,6 +33,7 @@ def markEvent(EventType:str, *args):
         case "trialBlockEnd":
             eventName = f'Trial {args[0]} in Block {args[1]} Ended'
         
+        # Task specific events
         case "promptStart":
             eventName = f'Prompt Start. Trial {args[0]}'
         case "promptEnd":
