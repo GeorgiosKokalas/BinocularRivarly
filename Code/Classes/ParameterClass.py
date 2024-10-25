@@ -61,8 +61,8 @@ class ParameterClass:
         #   - imagineDurS: The duration of the imagination period
         #   - stimDurS: The duration for which the stimulus is shown.
         self.trial = {'pdDurS': 0.2,
-                      'promptDurS':0.75,
-                      'imagineDurS':6,
+                      'promptDurS': 0.75,
+                      'imagineDurS':1,
                       'stimDurS':0.75
                       }
 
